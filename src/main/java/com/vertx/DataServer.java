@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 
 public class DataServer extends AbstractVerticle {
-    public static final String REST_BLOGPOSTS_URI = "http://192.168.99.100:8081/rest/api/blogposts";
+    public static final String REST_BLOGPOSTS_URI = "http://192.168.99.100:8081/api/blogposts";
 
     private MongoClient mongoClient;
 
