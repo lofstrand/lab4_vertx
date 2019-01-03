@@ -13,8 +13,6 @@ ENV VERTICLE_FILE vertx-1.0-SNAPSHOT-fat.jar
 # Set the location of the verticles
 ENV VERTICLE_HOME /usr/verticles
 
-EXPOSE 8090
-
 # Copy your fat jar to the container
 COPY target/$VERTICLE_FILE $VERTICLE_HOME/
 
