@@ -11,12 +11,6 @@ pipeline {
                 //sh 'mvn -Dmaven.test.failure.ignore=true install'
                 sh 'mvn -Dmaven.test.failure.ignore clean package'
             }
-            post {
-                success {
-                echo 'success'
-                    archiveArtifacts 'target/*.war'
-                }
-            }
         }
         stage ('Docker') {
             steps {
